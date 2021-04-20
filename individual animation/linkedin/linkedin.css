@@ -1,0 +1,93 @@
+
+html {
+  --col-icon: black;
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+ inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon:transparent;
+  --bg-icon: #fff;
+  --bg1-color: #fff;
+  --shadow-col: rgba(0, 0, 0, 0.3);
+}
+
+body{
+  background-color: rgb(230, 230, 230);
+}
+
+/*Social icons*/
+:root {
+  --link-size: 64px;
+  --trans-props: all 0.2s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+  flex-flow: row wrap;
+}
+.socialicon{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px var(--shadow-col);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.socialicon i {
+  margin: auto;
+  font-size: 44px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+
+ /*
+---------------------------
+   LINKEDIN MICROANIMATION
+---------------------------
+*/
+
+.linkedin-icon{
+  margin-left: 15px;
+}
+.linkedin:hover .linkedin-icon>rect{
+  animation: rect-up 0.3s linear infinite;
+}
+
+@keyframes rect-up {
+  50% {
+      y:10px;
+      height:11px;
+   }
+  0%{
+      y:13px;
+      height:8px;  
+      }
+  
+}
+
+.linkedin:hover .linkedin-icon> circle{
+  animation: bounce 0.4s linear infinite;
+}
+
+@keyframes bounce {
+  75% {
+      cy: 8px;
+   }
+   50%{
+      cy: 4px
+   }
+  0%{
+      cy:4px
+      }
+  
+}
+

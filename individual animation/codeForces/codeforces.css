@@ -1,0 +1,117 @@
+
+html {
+    --col-icon: black;
+   --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+   inset #4D4D4D -2px -2px 4px;
+    --col-bd-icon:transparent;
+    --bg-icon: #fff;
+    --bg1-color: #fff;
+    --shadow-col: rgba(0, 0, 0, 0.3);
+  }
+  
+  body{
+    background-color: rgb(230, 230, 230);
+  }
+  
+  /*Social icons*/
+  :root {
+    --link-size: 64px;
+    --trans-props: all 0.2s ease;
+    --link-size-footer-b: 40px;
+    --link-size-footer-s: 30px;
+  }
+  
+  .social-icons {
+    display: flex;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    flex-flow: row wrap;
+  }
+  .socialicon{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: var(--link-size);
+    height: var(--link-size);
+    background-color: #fff;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px var(--shadow-col);
+    text-decoration: none;
+    transition: var(--trans-props);
+  }
+  .socialicon i {
+    margin: auto;
+    font-size: 44px;
+    z-index: 1;
+    transition: var(--trans-props);
+  }
+  
+    /*
+    --------------------------
+       CODEFORCES MICROANIMATION
+    --------------------------
+    */
+    
+    .codeforces-icon{
+      margin-right: 6px;
+      margin-top: 6px;
+    }
+    
+    .codeforces-icon .red {
+      height:4px;
+      y:2.5px;
+      
+    }
+    .codeforces:hover .red{
+      animation: red-animation 2.5s infinite alternate;
+    }
+    
+    
+    .codeforces-icon .yellow{
+      height:5px;
+      y:1.5px;
+      
+    }
+    
+    .codeforces:hover .yellow{
+      animation: yellow-animation 2s infinite alternate-reverse;
+    }
+    
+    .codeforces:hover .blue{
+      animation: blue-animation 2s  infinite alternate;
+    }
+    
+    @keyframes red-animation{
+      0%{
+         y:0px
+      }
+      0%{
+          height:6px;
+          y:0.5px;
+      }
+    }
+    
+    @keyframes yellow-animation{
+      0%{
+          y:0px;
+      }
+      0%{
+          height:6px;
+          y:0.5px;
+      }
+    }
+    
+    @keyframes blue-animation{
+      0%{
+          y:0px;
+      }
+      0%{
+          height:3px;
+          y:3.5;
+      }
+    }
+
+  

@@ -1,0 +1,84 @@
+
+html {
+    --col-icon: black;
+   --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+   inset #4D4D4D -2px -2px 4px;
+    --col-bd-icon:transparent;
+    --bg-icon: #fff;
+    --bg1-color: #fff;
+    --shadow-col: rgba(0, 0, 0, 0.3);
+  }
+  
+  body{
+    background-color: rgb(230, 230, 230);
+  }
+  
+  /*Social icons*/
+  :root {
+    --link-size: 64px;
+    --trans-props: all 0.2s ease;
+    --link-size-footer-b: 40px;
+    --link-size-footer-s: 30px;
+  }
+  
+  .social-icons {
+    display: flex;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    flex-flow: row wrap;
+  }
+  .socialicon{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: var(--link-size);
+    height: var(--link-size);
+    background-color: #fff;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px var(--shadow-col);
+    text-decoration: none;
+    transition: var(--trans-props);
+  }
+  .socialicon i {
+    margin: auto;
+    font-size: 44px;
+    z-index: 1;
+    transition: var(--trans-props);
+  }
+  
+   /*
+    --------------------------
+       DRIBBBLE MICROANIMATION
+    --------------------------
+    */
+    
+    .dribbble-icon{
+      width: 30px;
+      height: 30px;
+      margin-left:17px;
+      margin-top: 18px;
+    }
+    
+    .dribbble:hover .dribbble-icon{ 
+        animation: dribbble-bounce .4s ease infinite;
+        transform: rotate(360deg);
+        transition: all 9s ease-in-out 0s;
+    }
+    
+    @keyframes dribbble-bounce {
+      from, to {
+        margin-top: 20px;
+      }
+      50% { 
+        margin-top: 15px; 
+      }
+      
+      75%{
+        margin-top: 15px;
+      }
+    }
+    
+  

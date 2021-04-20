@@ -1,0 +1,76 @@
+
+html {
+    --col-icon: black;
+   --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+   inset #4D4D4D -2px -2px 4px;
+    --col-bd-icon:transparent;
+    --bg-icon: #fff;
+    --bg1-color: #fff;
+    --shadow-col: rgba(0, 0, 0, 0.3);
+  }
+  
+  body{
+    background-color: rgb(230, 230, 230);
+  }
+  
+  /*Social icons*/
+  :root {
+    --link-size: 64px;
+    --trans-props: all 0.2s ease;
+    --link-size-footer-b: 40px;
+    --link-size-footer-s: 30px;
+  }
+  
+  .social-icons {
+    display: flex;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    flex-flow: row wrap;
+  }
+  .socialicon{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: var(--link-size);
+    height: var(--link-size);
+    background-color: #fff;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px var(--shadow-col);
+    text-decoration: none;
+    transition: var(--trans-props);
+  }
+  .socialicon i {
+    margin: auto;
+    font-size: 44px;
+    z-index: 1;
+    transition: var(--trans-props);
+  }
+
+  /*
+  ---------------------------
+     TWITTER MICROANIMATION
+  ---------------------------
+  */
+  .twitter-icon{
+    width: 40px;
+    margin-left: 12px;
+  }
+  
+  .twitter:hover #wing1{
+        transform-origin:center;
+        animation: flap 0.4s ease-out infinite alternate;
+     }	
+     
+  .twitter:hover #wing2{
+      transform-origin:center;
+      animation: flap 0.4s ease-in infinite alternate;
+   }		
+  
+  @keyframes flap{
+       50%{
+        transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+       }
+     }
